@@ -1,0 +1,95 @@
+.advantage {
+   background-image: 
+  linear-gradient(90.00deg, rgba(15, 15, 15, 0.7) 38.494%,rgba(0, 0, 0, 0.4) 101.557%),
+       url(../images/big-img.webp);
+   padding: 60px 0;
+   background-size: cover; /* ensures the background image covers the entire element */
+   background-position: center; /* centers the background image */
+   margin-bottom: 0;
+}
+
+.advantage__inner {
+   display: flex;
+   flex-direction: column;
+}
+.advantage__title, .advantage__subtitle{
+   font-family: $font-accent;
+   line-height: 120%;
+letter-spacing: 2%;
+}
+.advantage__subtitle {
+   background: linear-gradient(90.00deg, rgb(229, 45, 39),rgb(179, 18, 23));
+-webkit-background-clip:
+text;
+-webkit-text-fill-color:
+transparent;
+background-clip:
+text;
+text-fill-color:
+transparent;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: 2%;
+text-transform: uppercase;
+margin-bottom: 40px;
+}
+.advantage__title {
+   color: rgb(255, 255, 255);
+font-size: 42px;
+line-height: 120%;
+letter-spacing: 2%;
+text-transform: uppercase;
+max-width: 721px;
+margin-bottom: 50px;
+}
+.advantage__link {
+   border-radius: 34px;
+color: #fff !important;
+cursor: pointer !important;
+display: flex;
+width: fit-content;
+padding: 10px 65px;
+
+background: linear-gradient(90.00deg, rgb(229, 45, 39),rgb(179, 18, 23) 100%);
+}
+.advantage__list {
+   max-width: 800px;
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 50px;
+   column-gap: 80px;
+   margin-top: 70px;
+}
+.advantage__list-item {
+   display: flex;
+   flex-direction: column;
+   gap:7px;
+}
+.advantage__item-img {
+   width: 22px;
+   height: 22px;
+}
+.advantage__item-text {
+   max-width: 300px;
+   font-size: 24px;
+   line-height: 120%;
+   color: #fff;
+}
+@media(max-width: 750px){
+   .advantage__title{
+      font-size: 35px;
+      margin-bottom: 30px;
+   }
+}
+@media(max-width: 600px){
+   .advantage__list-item{
+      margin: 0 auto;
+   }
+   .advantage__title{
+      font-size: 24px;
+      margin-bottom: 25px;
+   }
+   .advantage__subtitle{
+      margin-bottom: 20px;
+   }
+}

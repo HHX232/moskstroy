@@ -1,0 +1,155 @@
+@font-face {
+   font-family: 'GamestationCondensed';
+   src: url('../fonts/GamestationCondensed.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationCondensedoblique';
+   src: url('../fonts/GamestationCondensedoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+@font-face {
+   font-family: 'GamestationDisplay';
+   src: url('../fonts/GamestationDisplay.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationDisplayoblique';
+   src: url('../fonts/GamestationDisplayoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+@font-face {
+   font-family: 'GamestationDisplayoutline';
+   src: url('../fonts/GamestationDisplayoutline.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationDisplayoutlineoblique';
+   src: url('../fonts/GamestationDisplayoutlineoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+@font-face {
+   font-family: 'GamestationExtended';
+   src: url('../fonts/GamestationExtended.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationExtendedoblique';
+   src: url('../fonts/GamestationExtendedoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+@font-face {
+   font-family: 'GamestationStorm';
+   src: url('../fonts/GamestationStorm.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationStormoblique';
+   src: url('../fonts/GamestationStormoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+@font-face {
+   font-family: 'GamestationText';
+   src: url('../fonts/GamestationText.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationTexto';
+   src: url('../fonts/GamestationTexto.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationTextoutline';
+   src: url('../fonts/GamestationTextoutline.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationTextoblique';
+   src: url('../fonts/GamestationTextoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+@font-face {
+   font-family: 'GamestationWarped';
+   src: url('../fonts/GamestationWarped.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'GamestationWarpedoblique';
+   src: url('../fonts/GamestationWarpedoblique.otf') format('opentype');
+   font-weight: normal;
+   font-style: oblique;
+}
+
+
+
+.container{
+   max-width: 1420px;
+   padding: 0 10px;
+   margin: 0 auto;
+   
+}
+body{
+   font-family: $font-main;
+   background-color: $main; 
+   color: #000;
+   font-size: 18px;
+}
+.none{
+   display: none !important;
+}
+html {
+   scroll-behavior: smooth;
+ } 
+// a{
+//    color: $white;
+//    cursor: pointer;
+//    &:hover{
+//       color: $accent;
+//       transition: color .3s;
+//    }
+// }
+.none{
+   display: none !important;
+}
+.visually-hidden{
+   opacity: 0;
+}
+section{
+   margin-bottom: 80px;
+}
+.big__title{
+   font-size: 40px;
+   font-family: $font-accent;
+}
+
+
