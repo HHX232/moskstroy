@@ -1,12 +1,17 @@
 .advantage {
    background-image: 
-  linear-gradient(90.00deg, rgba(15, 15, 15, 0.7) 38.494%,rgba(0, 0, 0, 0.4) 101.557%),
-       url(../images/big-img.webp);
+     linear-gradient(90deg, rgba(15, 15, 15, 0.7) 38.494%, rgba(0, 0, 0, 0.4) 101.557%), 
+   image-set(
+    url("../images/big-img.avif") type("image/avif"),
+    url("../images/big-img.webp") type("image/webp"),
+  );
+//   background-image: url(../images/big-img.jpg);
    padding: 60px 0;
    background-size: cover; /* ensures the background image covers the entire element */
    background-position: center; /* centers the background image */
    margin-bottom: 0;
-}
+ }
+ 
 
 .advantage__inner {
    display: flex;

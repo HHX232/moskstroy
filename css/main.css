@@ -510,6 +510,24 @@ section {
   position: relative;
 }
 
+.header__links-item {
+  position: relative;
+  transition: all 0.3s;
+}
+.header__links-item::before {
+  transition: all 0.3s;
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(19, 19, 19, 0);
+}
+.header__links-item:hover::before {
+  background-color: #131313;
+}
+
 .burger__item-img {
   transition: all 0.2s;
 }
@@ -702,6 +720,11 @@ section {
   font-weight: 600;
 }
 
+@media (max-width: 700px) {
+  .contacts__list {
+    text-align: center;
+  }
+}
 .filters {
   margin-bottom: 0;
 }
@@ -967,6 +990,13 @@ section {
   min-width: 0;
 }
 
+.swiper__title {
+  font-family: "GamestationExtended";
+  line-height: 120%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .servise__title, .servise__subtitle {
   font-family: "GamestationExtended";
   line-height: 120%;
@@ -1017,9 +1047,29 @@ section {
 .swiper {
   cursor: pointer;
   width: 560px;
-  height: 500px;
+  height: 530px;
   aspect-ratio: 1/1;
   margin: 0;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 27%;
+  padding: 15px;
+  background-color: rgba(34, 34, 34, 0.85);
+  color: #fff;
+  font-size: 19px;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  overflow-y: scroll;
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .swiper__img {
@@ -1045,6 +1095,11 @@ section {
   }
   .servise__title {
     font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .swiper-slide-text {
+    height: 30%;
   }
 }
 @media (max-width: 500px) {
@@ -1080,7 +1135,8 @@ section {
   }
 }
 .advantage {
-  background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.7) 38.494%, rgba(0, 0, 0, 0.4) 101.557%), url(../images/big-img.webp);
+  background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.7) 38.494%, rgba(0, 0, 0, 0.4) 101.557%), -webkit-image-set(url("../images/big-img.avif") type("image/avif"), url("../images/big-img.webp") type("image/webp"));
+  background-image: linear-gradient(90deg, rgba(15, 15, 15, 0.7) 38.494%, rgba(0, 0, 0, 0.4) 101.557%), image-set(url("../images/big-img.avif") type("image/avif"), url("../images/big-img.webp") type("image/webp"));
   padding: 60px 0;
   background-size: cover; /* ensures the background image covers the entire element */
   background-position: center; /* centers the background image */
